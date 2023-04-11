@@ -1,0 +1,113 @@
+ [
+        {
+            "id": 1,
+            "company_logo": "https://i.ibb.co/5sdHJwN/google-1-1-1.png",
+            "job_title": "Software Engineer",
+            "company_name": "Google LLC.",
+            "remote_or_onsite": "Remote",
+            "location": "New York, NY",
+            "fulltime_or_part_time": "Fulltime",
+            "salary": "$100,000 - $120,000",
+            "job_description": "We are looking for a skilled software engineer to join our team.",
+            "job_responsibility": ["Develop and maintain software applications", "Collaborate with cross-functional teams"],
+            "educational_requirements": ["Bachelor's degree in Computer Science or related field"],
+            "experiences": ["At least 3 years of experience in software development"],
+            "contact_information": {
+                "phone": "+1-123-456-7890",
+                "email": "hr@abcinc.com"
+            }
+        },
+        {
+            "id": 2,
+            "company_logo": "https://i.ibb.co/2KC2R0X/netflix-4-1.png",
+            "job_title": "Marketing Manager",
+            "company_name": "Netflix.",
+            "remote_or_onsite": "Onsite",
+            "location": "San Francisco, CA",
+            "fulltime_or_part_time": "Fulltime",
+            "salary": "$80,000 - $100,000 per year",
+            "job_description": "We are seeking a talented marketing manager to lead our marketing efforts.",
+            "job_responsibility": ["Develop and implement marketing strategies", "Manage marketing campaigns"],
+            "educational_requirements": "Bachelor's degree in Marketing or related field",
+            "experiences": "At least 5 years of experience in marketing",
+            "contact_information": {
+                "phone": "+1-987-654-3210",
+                "email": "<Email>"
+            }
+        },
+        {
+            
+                "id": 3,
+                "company_logo": "https://i.ibb.co/FxgGhsw/tesla-9-1.png",
+                "job_title": "Data Analyst",
+                "company_name": "Tesla.",
+                "remote_or_onsite": "Remote",
+                "location": "Chicago, IL",
+                "fulltime_or_part_time": "Fulltime",
+                "salary": "$70,000 - $90,000 per year",
+                "job_description": "We are looking for a skilled data analyst to join our team.",
+                "job_responsibility": ["Analyze and interpret data", "Collaborate with cross-functional teams"],
+                "educational_requirements": "Bachelor's degree in Mathematics or related field",
+                "experiences": "At least 2 years of experience in data analysis",
+                "contact_information": {
+                    "phone": "+1-123-456-7890",
+                    "email": "<Email>"
+                }
+            
+        }, {
+            "id": 4,
+            "company_logo": "https://i.ibb.co/hst2301/Career-Hub.png",
+            "job_title": "Web Engineer",
+            "company_name": "CareerHub.",
+            "remote_or_onsite": "Remote",
+            "location": "Seattle, WA",
+            "fulltime_or_part_time": "Full-time",
+            "salary": "$100,000 - $120,000 per year",
+            "job_description": "We are looking for a software engineer to join our team...",
+            "job_responsibility": "Responsibilities include...",
+            "educational_requirements": "Bachelor's degree in Computer Science or related field",
+            "experiences": "5+ years of experience in software engineering",
+            "contact_information": {
+                "phone": "(123) 456-7890",
+                "email": "jobs@example.com"
+            }
+        },
+        {
+            "id": 5,
+            "company_logo": "https://i.ibb.co/Y3k5GwS/Group-10021.png",
+            "job_title": "Javascript Developer",
+            "company_name": "OpenAi.",
+            "remote_or_onsite": "Remote",
+            "location": "Seattle, WA",
+            "fulltime_or_part_time": "Full-time",
+            "salary": "$100,000 - $120,000 per year",
+            "job_description": "We are looking for a software engineer to join our team...",
+            "job_responsibility": "Responsibilities include...",
+            "educational_requirements": "Bachelor's degree in Computer Science or related field",
+            "experiences": "3+ years of experience in software engineering",
+            "contact_information": {
+                "phone": "(123) 456-7890",
+                "email": "careers@example.com"
+            }
+        },
+        {
+            "id": 6,
+            "company_logo": "https://i.ibb.co/9Wcf4KM/google-1-1-1.png",
+            "job_title": "Ai Expert",
+            "company_name": "Google-Ai.",
+            "remote_or_onsite": "Remote",
+            "location": "Seattle, WA",
+            "fulltime_or_part_time": "Full-time",
+            "salary": "$100,000 - $120,000 per year",
+            "job_description": "We are looking for a software engineer to join our team...",
+            "job_responsibility": "Responsibilities include...",
+            "educational_requirements": "Bachelor's degree in Computer Science or related field",
+            "experiences": "3+ years of experience in software engineering",
+            "contact_information": {
+                "phone": "(123) 456-7890",
+                "email": "careers@example.com"
+            }
+        }
+        
+        
+]
