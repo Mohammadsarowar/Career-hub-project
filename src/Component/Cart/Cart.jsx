@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Cart = ({data}) => {
-    console.log(data)
     const {company_logo,job_title,company_name,remote_or_onsite,location,fulltime_or_part_time,salary} = data
     return (
-        <div className='mx-auto my-10'>
-            <div className="card w-full bg-base-100 shadow-xl">
+        <div className=''>
+            <div className="card w-full h-max bg-base-100 shadow-xl">
          <figure>
               <img className='mt-5' src={company_logo} alt="Shoes" />
          </figure>
@@ -24,7 +24,10 @@ const Cart = ({data}) => {
         <p className='mr-5'>{location}</p>
         <p>{salary}</p>
     </div>
-    <button className='btn'>View Details</button>
+    <Link to="/details">
+      <button onClick={()=>passData(data)} className='btn'>View Details</button>
+    </Link>
+   
   </div>
 </div>
         </div>

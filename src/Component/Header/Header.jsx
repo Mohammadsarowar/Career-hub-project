@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div>
-            <div className="navbar bg-base-100">
+        <>
+            <div className="navbar bg-base-200 p-8">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -36,7 +36,7 @@ const Header = () => {
     <a className="btn bold text-white bg-indigo-700 border-none">Star Applying</a>
   </div>
 </div>
-        </div>
+        </>
     );
 };
 

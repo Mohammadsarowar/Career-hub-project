@@ -5,23 +5,23 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Component/Home/Home'
 import ErrorPage from './Component/ErrorPage'
-import HomeHeader from './Component/HomeHeader/HomeHeader'
 import ShowData from './Component/ShowData/ShowData'
+import ViewDetails from './Component/ViewDetails/ViewDetails'
 
 const router = createBrowserRouter([
   {
     path:'/',
-    element:<Home></Home>,
+    element:<App></App>,
     errorElement:<ErrorPage></ErrorPage>,
     children:[
-      {
-        path:'/',
-        element:<App></App>
-      },
-      {
-        path:"/statistics",
+       {
+        path:"/",
         element:<ShowData></ShowData>,
         loader:()=>fetch('jobData.json')
+      },
+      {
+        path:'/details',
+        element:<ViewDetails></ViewDetails>
       }
     ]
   }
