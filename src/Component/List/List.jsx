@@ -5,6 +5,9 @@ import img3 from '../../assets/Icons/chip 1.png';
 import img4 from '../../assets/Icons/chip 1.png';
 const List = () => {
     return (
+      <div className='mt-10'>
+      <h2 className='text-center sm:text-4xl lg:text-5xl bold'>Job Category List</h2>
+      <p className='text-center text-lg m-2'>Explore thousands of job opportunities with all the information you need. Its your future</p>
         <div className='grid lg:gap-4 md:gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 ml-14 mt-8 mb-5'>
             <div className="card max-w-max bg-base-100 shadow-xl ml-10">
   <figure className="px-10 pt-10">
@@ -42,6 +45,7 @@ const List = () => {
     <p>224 Jobs Available</p>
   </div>
 </div>
+        </div>
         </div>
     );
 };

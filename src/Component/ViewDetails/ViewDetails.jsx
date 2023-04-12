@@ -11,10 +11,23 @@ const ViewDetails = () => {
             setDetails(foundData)  
           }
     })
-    console.log(details)
+    const {job_description,job_responsibility,educational_requirements,experiences} = details
     return (
-        <div>
-           <p>{details.salary}</p>
+        <div className='text-center mt-20'>
+        <div className='grid grid-cols-2'>
+        <div className='align-middle'>
+             <p className='bold m-2'>Job Description:<span>{job_description}</span></p>
+             <p className='bold m-2'>Job Responsibility:<span>{job_responsibility}</span></p>
+             <p className='bold m-2'>Educational Requirements:<span>{educational_requirements}</span></p>
+             <p className='bold m-2'>Experiences:<span>{experiences}</span></p>
+           </div>
+           <div>
+            <div>
+                <h2></h2>
+                <h4></h4>
+            </div>
+           </div>
+        </div>
         </div>
     );
 };

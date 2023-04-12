@@ -21,7 +21,7 @@ const Header = () => {
         <li><NavLink to="/blog">Blog</NavLink></li>
       </ul>
     </div>
-    <NavLink to='/' className="btn btn-ghost normal-case text-xl">daisyUI</NavLink>
+    <NavLink to='/' className="btn btn-ghost normal-case text-2xl">ProCoder</NavLink>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

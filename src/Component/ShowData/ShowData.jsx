@@ -15,6 +15,8 @@ const ShowData = () => {
          <HomeHeader></HomeHeader>
          <List></List>
          <Outlet></Outlet>
+         <h2 className='text-center mt-10 text-5xl bold'> Featured Jobs</h2>
+         <p className='text-center m-2'>Explore thousands of job opportunities with all the information you need. Its your future</p>
          <div className='grid lg:grid-cols-2 gap-5 md:grid-cols-1 m-10 p-10'>
          {
             AllData.slice(0,showAll ?6 :4).map(data=>(<Cart
