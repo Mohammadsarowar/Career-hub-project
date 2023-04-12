@@ -8,6 +8,7 @@ import ErrorPage from './Component/ErrorPage'
 import ShowData from './Component/ShowData/ShowData'
 import ViewDetails from './Component/ViewDetails/ViewDetails'
 import Statistics from './Component/Statistics/Statistics'
+import Blog from './Component/Blog/Blog'
 
 const router = createBrowserRouter([
   {
@@ -27,8 +28,13 @@ const router = createBrowserRouter([
       },
       {
         path:"/statistics",
-        element:<Statistics></Statistics>
+        element:<Statistics></Statistics>,
+        loader:() =>fetch('mark.json')
         
+      },
+      {
+        path:"/blog",
+        element:<Blog></Blog>
       }
     ]
   }
