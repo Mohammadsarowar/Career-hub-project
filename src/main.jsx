@@ -10,6 +10,7 @@ import ViewDetails from './Component/ViewDetails/ViewDetails'
 import Statistics from './Component/Statistics/Statistics'
 import Blog from './Component/Blog/Blog'
 import AppliedJob from './Component/AppliedJob/AppliedJob'
+import Applyed from './Component/Apply/Applyed'
 
 const router = createBrowserRouter([
   {
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/applied',
-        element:<AppliedJob></AppliedJob>
+        element:<Applyed></Applyed>
       }
     ]
   }
