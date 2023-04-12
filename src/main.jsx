@@ -9,6 +9,7 @@ import ShowData from './Component/ShowData/ShowData'
 import ViewDetails from './Component/ViewDetails/ViewDetails'
 import Statistics from './Component/Statistics/Statistics'
 import Blog from './Component/Blog/Blog'
+import AppliedJob from './Component/AppliedJob/AppliedJob'
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path:"/blog",
         element:<Blog></Blog>
+      },
+      {
+        path:'/applied',
+        element:<AppliedJob></AppliedJob>
       }
     ]
   }
