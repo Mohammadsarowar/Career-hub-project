@@ -12,10 +12,10 @@
             "job_responsibility": ["Develop and maintain software applications", "Collaborate with cross-functional teams"],
             "educational_requirements": ["Bachelor's degree in Computer Science or related field"],
             "experiences": ["At least 3 years of experience in software development"],
-            "contact_information": {
+            
                 "phone": "+1-123-456-7890",
                 "email": "hr@abcinc.com"
-            }
+            
         },
         {
             "id": 2,
@@ -30,10 +30,10 @@
             "job_responsibility": ["Develop and implement marketing strategies", "Manage marketing campaigns"],
             "educational_requirements": "Bachelor's degree in Marketing or related field",
             "experiences": "At least 5 years of experience in marketing",
-            "contact_information": {
+            
                 "phone": "+1-987-654-3210",
                 "email": "<Email>"
-            }
+            
         },
         {
             
@@ -49,10 +49,10 @@
                 "job_responsibility": ["Analyze and interpret data", "Collaborate with cross-functional teams"],
                 "educational_requirements": "Bachelor's degree in Mathematics or related field",
                 "experiences": "At least 2 years of experience in data analysis",
-                "contact_information": {
+            
                     "phone": "+1-123-456-7890",
                     "email": "<Email>"
-                }
+                
             
         }, {
             "id": 4,
@@ -67,10 +67,10 @@
             "job_responsibility": "Responsibilities include...",
             "educational_requirements": "Bachelor's degree in Computer Science or related field",
             "experiences": "5+ years of experience in software engineering",
-            "contact_information": {
+           
                 "phone": "(123) 456-7890",
                 "email": "jobs@example.com"
-            }
+            
         },
         {
             "id": 5,
@@ -85,10 +85,10 @@
             "job_responsibility": "Responsibilities include...",
             "educational_requirements": "Bachelor's degree in Computer Science or related field",
             "experiences": "3+ years of experience in software engineering",
-            "contact_information": {
+           
                 "phone": "(123) 456-7890",
                 "email": "careers@example.com"
-            }
+            
         },
         {
             "id": 6,
@@ -103,10 +103,10 @@
             "job_responsibility": "Responsibilities include...",
             "educational_requirements": "Bachelor's degree in Computer Science or related field",
             "experiences": "3+ years of experience in software engineering",
-            "contact_information": {
+            
                 "phone": "(123) 456-7890",
                 "email": "careers@example.com"
-            }
+            
         }
         
         
