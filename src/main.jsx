@@ -7,6 +7,7 @@ import Home from './Component/Home/Home'
 import ErrorPage from './Component/ErrorPage'
 import ShowData from './Component/ShowData/ShowData'
 import ViewDetails from './Component/ViewDetails/ViewDetails'
+import Statistics from './Component/Statistics/Statistics'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
         path:'details/:id',
         element:<ViewDetails></ViewDetails>,
         loader:({params})=>fetch("jobData.json")
+      },
+      {
+        path:"/statistics",
+        element:<Statistics></Statistics>
+        
       }
     ]
   }
