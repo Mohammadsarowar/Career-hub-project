@@ -1,17 +1,18 @@
 import React, { useContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredCart } from "../../utils/fakeDB";
-import Applyed from "./Applyed/";
+import Applyed from "./Applyed";
+
 
 const Apply = () => {
-  const { initialCart } = useLoaderData();
+  const { initialJob } = useLoaderData();
 
   return (
     <>
       <h2 className="my-24 text-center">Apply jobs</h2>
       <div className="mx-24 justify-center text-center">
-        {initialCart.map((data) => (
-          <Applyed apply={data} key={data.id}></Applyed>
+        {initialJob.map((data) => (
+        <Applyed Apply={data} key={data.id}></Applyed>
         ))}
       </div>
     </>

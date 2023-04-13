@@ -1,33 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Applyed = ({ apply }) => {
+const Applyed = ( apply) => {
+console.log(apply)
+
   const {
-    id,
+    id, 
     image,
     name,
-    company,
+    company_logo ,
+    company_name,
+
     location,
-    Salary,
+    salary,
     Job_Type,
     Employment_type,
-  } = apply;
+  } = apply.Apply;
+
   return (
     <div className="p-5  text-center flex items-center border mb-3">
       <div className="inline-flex mr-5 bg-slate-500 px-3 py-5 w-24 h-24">
-        <img src={image} alt="" className="" />
+        <img src={company_logo} alt="" className="" />
       </div>
       <div className="flex items-center justify-between">
         <div>
-          <h3>{name}</h3>
-          <h2>{company}</h2>
+          <h3>{company_name}</h3>
+          <h2>{Job_Type}</h2>
           <div className="flex">
             <p>{Job_Type}</p>
             <p>{Employment_type}</p>
           </div>
           <div className="flex">
             <h5>{location}</h5>
-            <h5>{Salary}</h5>
+            <h5>{salary}</h5>
           </div>
         </div>
         <div className="btn">

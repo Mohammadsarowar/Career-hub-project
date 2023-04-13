@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './Component/Home/Home'
+
 import ErrorPage from './Component/ErrorPage'
 import ShowData from './Component/ShowData/ShowData'
 import ViewDetails from './Component/ViewDetails/ViewDetails'
 import Statistics from './Component/Statistics/Statistics'
 import Blog from './Component/Blog/Blog'
-import AppliedJob from './Component/AppliedJob/AppliedJob'
 import Applyed from './Component/Apply/Applyed'
+import { applyAndJobData } from './loader/getApply_JobData'
+import Apply from './Component/Apply/Apply'
+
 
 const router = createBrowserRouter([
   {
@@ -21,26 +23,32 @@ const router = createBrowserRouter([
        {
         path:"/",
         element:<ShowData></ShowData>,
-        loader:()=>fetch('jobData.json')
+        loader:()=>fetch('/jobData.json')
       },
       {
         path:'details/:id',
         element:<ViewDetails></ViewDetails>,
-        loader:({params})=>fetch("jobData.json")
+        loader:({params})=>fetch("/jobData.json")
       },
       {
         path:"/statistics",
         element:<Statistics></Statistics>,
-        loader:() =>fetch('mark.json')
+        loader:() =>fetch('/marks.json')
         
       },
       {
         path:"/blog",
         element:<Blog></Blog>
       },
+      // {
+      //   path:'/applied',
+      //   element:
+      //   loader: applyAndJobData
+      // },
       {
-        path:'/applied',
-        element:<Applyed></Applyed>
+        path:"/applied",
+        element:<Apply></Apply>,
+        loader:applyAndJobData
       }
     ]
   }

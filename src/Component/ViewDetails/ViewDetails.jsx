@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import {CurrencyDollarIcon,BriefcaseIcon,EnvelopeIcon,PhoneIcon,MapPinIcon } from '@heroicons/react/24/solid'
-import { addToDb } from '../../utils/FakeDb';
+import { addToDb } from '../../utils/fakeDB';
+
 
 
 
 const ViewDetails = () => {
-    const data = useParams();
+    const data = useParams()
     const receivedData = useLoaderData()
     const [details,setDetails] = useState({})
-       addToDb(details)
+ 
+       const handleDetails = (id) =>{
+     
+        addToDb(id)
+       }
     useEffect(()=>{
         if(receivedData){
             const foundData = receivedData.find(item=>item.id==data.id);
@@ -43,7 +48,7 @@ const ViewDetails = () => {
             </div>
             <div className=''>
              <Link>
-                <button onClick={addToDb} className='btn w-full'>Apply Now</button>
+                <button onClick={()=>handleDetails(id)} className='btn w-full'>Apply Now</button>
              </Link>
            </div>
            </div>

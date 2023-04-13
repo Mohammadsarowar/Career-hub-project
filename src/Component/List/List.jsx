@@ -8,8 +8,8 @@ const List = () => {
       <div className='mt-10'>
       <h2 className='text-center sm:text-4xl lg:text-5xl bold'>Job Category List</h2>
       <p className='text-center text-lg m-2'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-        <div className='grid lg:gap-4 md:gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 ml-14 mt-8 mb-5'>
-            <div className="card max-w-max bg-base-100 shadow-xl ml-10">
+        <div className="md:flex md:justify-around md:items-center lg:max-w-6xl mx-auto px-4 sm:px-6 lg:px-14 py-16">
+            <div className="card max-w-max bg-base-100 shadow-xl ">
   <figure className="px-10 pt-10">
     <img src={img1} alt="Shoes" className="rounded-xl" />
   </figure>

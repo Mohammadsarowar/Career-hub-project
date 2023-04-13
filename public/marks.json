@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "1",
+    "assignment": "1",
+    "mark": "51"
+  },
+  {
+    "_id": "2",
+    "assignment": "2",
+    "mark": "49"
+  },
+  {
+    "_id": "3",
+    "assignment": "3",
+    "mark": "31"
+  },
+  {
+    "_id": "4",
+    "assignment": "4",
+    "mark": "55"
+  },
+  {
+    "_id": "5",
+    "assignment": "5",
+    "mark": "56"
+  },
+  {
+    "_id": "6",
+    "assignment": "6",
+    "mark": "43"
+  },
+  {
+    "_id": "7",
+    "assignment": "7",
+    "mark": "60"
+  },
+  {
+    "_id": "8",
+    "assignment": "8",
+    "mark": "51"
+  }
+]

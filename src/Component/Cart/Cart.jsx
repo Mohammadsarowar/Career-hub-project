@@ -4,8 +4,7 @@ import {MapPinIcon,CurrencyDollarIcon } from '@heroicons/react/24/solid'
 const Cart = ({data}) => {
     const {id,company_logo,job_title,company_name,remote_or_onsite,location,fulltime_or_part_time,salary} = data
     return (
-        <div className=''>
-        
+        <> 
             <div className="card w-full h-max bg-base-100 shadow-xl">
          <figure>
               <img className='mt-5' src={company_logo} alt="Shoes" />
@@ -31,7 +30,7 @@ const Cart = ({data}) => {
    
   </div>
 </div>
-        </div>
+        </>
     );
 };
 

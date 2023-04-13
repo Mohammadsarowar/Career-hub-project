@@ -1,62 +1,41 @@
-import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-const Statistics = () => {
-    const marksArray = [
-        {
-          id: 1,
-          name: "Assignment 1",
-          mark: 51
-        },
-        {
-          id: 2,
-          name: "Assignment 2",
-          mark: 49
-        },
-        {
-          id: 3,
-          name: "Assignment 3",
-          mark: 31
-        },
-        {
-          id: 4,
-          name: "Assignment 4",
-          mark: 55
-        },
-        {
-          id: 5,
-          name: "Assignment 5",
-          mark: 56
-        },
-        {
-          id: 6,
-          name: "Assignment 6",
-          mark: 43
-        },
-        {
-          id: 7,
-          name: "Assignment 7",
-          mark: 60
-        },
-     
-      ];
-      
+import React from "react";
+import { useLoaderData } from "react-router-dom";
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
-    return (
-        <div>
-            <LineChart
-                width={1000}
-                height={300}
-                data={marksArray}
-            >
-                <Line dataKey="physics"></Line>
-                <Line stroke="#8884d8" dataKey="mark"></Line>
-                <XAxis dataKey="name" />
-                <YAxis></YAxis>
-                <Tooltip />
-            </LineChart>
+const Statistics = () => {
+  const marks = useLoaderData();
+
+  return (
+    <div className="w-10/12 mx-auto mt-5">
+      <h2 className="text-2xl text-center font-bold mb-5">Statistics</h2>
+      <div className="w-full bg-base-100 shadow-xl">
+        <div className="card-body">
+          <ResponsiveContainer width="100%" height={400}>
+            <AreaChart data={marks}>
+              <Area
+                type="monotone"
+                dataKey="mark"
+                stroke="#8884d8"
+                fill="#8884d8"
+              />
+              <XAxis dataKey="assignment" />
+              <YAxis />
+              <CartesianGrid strokeDasharray="3 3" />
+              <Tooltip />
+            </AreaChart>
+          </ResponsiveContainer>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Statistics;
