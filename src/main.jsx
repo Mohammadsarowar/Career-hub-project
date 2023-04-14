@@ -12,6 +12,7 @@ import Blog from './Component/Blog/Blog'
 import Applyed from './Component/Apply/Applyed'
 import { applyAndJobData } from './loader/getApply_JobData'
 import Apply from './Component/Apply/Apply'
+import FullTime from './Component/FindJob/FullTime'
 
 
 const router = createBrowserRouter([
@@ -40,15 +41,15 @@ const router = createBrowserRouter([
         path:"/blog",
         element:<Blog></Blog>
       },
-      // {
-      //   path:'/applied',
-      //   element:
-      //   loader: applyAndJobData
-      // },
       {
         path:"/applied",
         element:<Apply></Apply>,
         loader:applyAndJobData
+      },
+      {
+        path:'/fulltime',
+        element:<FullTime></FullTime>,
+        loader:()=>fetch('/jobData.json')
       }
     ]
   }
